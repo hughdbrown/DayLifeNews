@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="837e6d97-8be6-45ba-b1db-bf37499d59ea" kpf_version="4" name="daylifenews.kpf">
+<preference-set idref="837e6d97-8be6-45ba-b1db-bf37499d59ea">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

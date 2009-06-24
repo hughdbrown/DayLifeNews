@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} User news {% endblock title %}
+
+{% block body%}
+<h1>DayLife News</h1>
+{% with response.payload.article as articles %}
+    {% for article in articles %}
+        <div class="DL-content-wrapper">
+        <h6 class="DL-headline">{{ article.headline }}</h6>
+        <span class="DL-timestamp">{{ article.timestamp }}</span>
+        <p class="DL-excerpt">{{ article.excerpt }}</p>
+        <a href="{{ article.url }}">Complete story</a>
+        </div>
+        <hr />
+    {% endfor %}
+{% endwith %}
+{% endblock body%}
+
