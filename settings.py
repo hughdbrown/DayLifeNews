@@ -66,5 +66,4 @@ INSTALLED_APPS = (
 
     'daylifenews.main',
     'daylifenews.DayLifeAPI',
-    
 )
