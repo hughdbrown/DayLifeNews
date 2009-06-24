@@ -1,0 +1,2 @@
+-e git+http://github.com/hughdbrown/DayLifeNews.git#egg=DayLifeNews
+
