@@ -32,9 +32,10 @@ USE_I18N = True
 import django
 DJANGO_ROOT = django.__path__[0]
 
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site_media/')
-MEDIA_URL = '/site_media/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site-media/')
+MEDIA_URL = '/site-media/'
 ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_ROOT = os.path.realpath(os.path.join(DJANGO_ROOT, "contrib/admin/media"))
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '=wt+b1kj^0o2@^4%-ngr44frjuhd@ak^o7*ntbb_53mj9%in&x'

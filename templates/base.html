@@ -3,19 +3,17 @@
 <head>
     <title>DayLife News | {% block title %}{% endblock title %}</title>
     
-    <link href="http://diacache.daylife.com/_static/release-48944/v2/css/daylife/reset.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="http://diacache.daylife.com/_static/release-48944/v2/css/daylife/sitetools.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="http://www.daylife.com/css/advanced.css/1245790188.css" rel="stylesheet" type="text/css" media="screen" id=""/>
-    
+    <link href="{{ MEDIA_URL}}css/daylifenews.css" rel="stylesheet" type="text/css" media="screen" />    
 </head>
 
-<body id="DL-body">
-    <div id="DL-page-daylife-page-topnews" class="DL-namespace DL-page-group-topic DL-template-none">
-        <div class="DL-site-wrapper DL-js-enhanced">
-            <div id="DL-content-region">
-            {% block body%}{% endblock body%}
-            </div>
-        </div>
+<body>
+    <div id="header">
+        {% block header %}{% endblock header%}
+    </div>
+    <div id="content-main">
+        {% block body %}{% endblock body %}
+    </div>
+    <div id="footer">
     </div>
 </body>
 </html>
