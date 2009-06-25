@@ -6,9 +6,11 @@
 <div id="header-content">
 <h1><a href="http://www.daylife.com/">DayLife News</a></h1>
 <div id="nav">
+<p>Current topics: 
 {% for topic in news %}
     <a href="#{{ topic.topic }}">{{ topic.topic }}</a>
 {% endfor %}
+</p>
 </div>
 </div>
 {% endblock header %}

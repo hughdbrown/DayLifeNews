@@ -15,4 +15,7 @@ DATABASE_PORT = ''             # Set to empty string for default. Not used with 
 
 SERVE_MEDIA = True        # Have webserver serving python serve local media, too
 
+# Something like this:
+#   DAYLIFE_ARGS = {"accesskey":"8befa1cf0a7c0291613242235638a662", "sharedsecret":"2e548ef751397c653752057adcff0c9f"}
+# Would these work? Absolutely.
 DAYLIFE_ARGS = {"accesskey":"", "sharedsecret":""}
