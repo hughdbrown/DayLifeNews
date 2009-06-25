@@ -53,7 +53,7 @@ fieldset { padding: 0; margin-top: 5px;	}
 
 blockquote { border-left:6px solid #CCC; padding-left:8px; }
 
-.headline { font-style:italic; }
+.headline { font-style:italic; color:rgb(241,137,27); }
 
 legend {
     text-transform: uppercase;

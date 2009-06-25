@@ -12,7 +12,7 @@ def get_content(topic):
     weekago = now - (7*86400)
     params = {'query':topic, 'start_time':weekago, 'end_time':now, 'sort':"date"}
     search = api_instance.search_getRelatedArticles(**params)
-    articles = search[u'response'][u'payload'][u'article']
+    articles = search[u'response'][u'payload'][u'article']  
     keys = ['headline', 'timestamp', 'excerpt', 'source', 'url']
     content = [ dict((key, article[key]) for key in keys) for article in articles ]
     return { 'topic':topic, 'content': content }
