@@ -20,10 +20,10 @@
     {% with topic.content as article_list %}
         {% for article in article_list %}
             <div class="article">
-            <h2>{{ article.headline }}</h2>
+            <p class="headline">{{ article.headline }}</p>
             <b>{{ article.timestamp }}</b>
             <blockquote>{{ article.excerpt }}</blockquote>
-            <a href="{{ article.url }}">{{ article.source.name }}</a>
+            <p>More at: <a href="{{ article.url }}">{{ article.source.name }}</a></p>
             </div>
             {% if forloop.last %}{% else %}<hr />{% endif %}
         {% endfor %}

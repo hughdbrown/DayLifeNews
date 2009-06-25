@@ -39,7 +39,7 @@ body {
 	position: relative;
 	background: white;
 }
-
+#content-main {background: rgb(238, 238, 238);}
 #header { border-bottom:2px dotted rgb(255, 222, 88); }
 #footer { border-top:2px dotted rgb(255, 222, 88); }
 #nav {	margin-bottom:16px; }
@@ -50,6 +50,7 @@ body {
 	padding:8px;
 	margin-bottom:16px;
 	border:2px dotted rgb(255, 222, 88);
+	background:white;
 }
 .article { padding:12px; }
 .article-wrapper {
@@ -63,6 +64,8 @@ fieldset {
 }
 
 blockquote { border-left:6px solid #CCC; padding-left:8px; }
+
+.headline { font-style:italic;}
 
 legend {
     text-transform: uppercase;
