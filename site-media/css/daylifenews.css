@@ -21,7 +21,7 @@ body {
 #footer {
 	clear: both;
 	margin-top: 1em;
-	padding-bottom: 6em;
+
 }
 
 #footer p {
@@ -40,6 +40,8 @@ body {
 	background: white;
 }
 
+#header { border-bottom:2px dotted rgb(255, 222, 88); }
+#footer { border-top:2px dotted rgb(255, 222, 88); }
 #nav {	margin-bottom:16px; }
 
 .article-main {
@@ -47,6 +49,7 @@ body {
 	color: rgb(30, 40, 30);
 	padding:8px;
 	margin-bottom:16px;
+	border:2px dotted rgb(255, 222, 88);
 }
 .article { padding:12px; }
 .article-wrapper {
