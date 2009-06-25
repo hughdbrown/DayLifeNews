@@ -3,11 +3,13 @@
 {% block title %} User news {% endblock title %}
 
 {% block header %}
+<div id="header-content">
 <h1><a href="http://www.daylife.com/">DayLife News</a></h1>
 <div id="nav">
 {% for topic in news %}
     <a href="#{{ topic.topic }}">{{ topic.topic }}</a>
 {% endfor %}
+</div>
 </div>
 {% endblock header %}
 
@@ -34,7 +36,7 @@
 {% endblock body%}
 
 {% block footer %}
-    <div>
+    <div id="footer-content">
         <p>Copyright <a href="http://www.hughdbrown.com/">Hugh Brown</a> &bull;
         <a href="http://creativecommons.org/licenses/by/3.0/us/" title="Creative Commons Attribution">Some Rights Reserved</a>  &bull;
         <a href="http://www.djangoproject.com/">Django powered</a>
